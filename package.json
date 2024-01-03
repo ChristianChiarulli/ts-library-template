@@ -1,0 +1,33 @@
+{
+  "name": "@chrisatmachine/ts-library-template",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "testing posting to npm",
+  "homepage": "chrisatmachine.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChristianChiarulli/ts-library-template"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "lint": "tsc",
+    "outdated": "bunx npm-check-updates -ui -p bun"
+  },
+  "keywords": [
+    "testing",
+    "npm"
+  ],
+  "author": "Christian Chiarulli",
+  "license": "Unlicense",
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "bun-types": "latest",
+    "tsup": "^8.0.1"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  }
+}
