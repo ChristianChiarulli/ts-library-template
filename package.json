@@ -4,6 +4,9 @@
   "type": "module",
   "description": "testing posting to npm",
   "homepage": "chrisatmachine.com",
+  "files": [
+    "./dist/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ChristianChiarulli/ts-library-template"
